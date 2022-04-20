@@ -27,9 +27,11 @@ int print_o(va_list o);
 int print_x(va_list x);
 int print_X(va_list X);
 int print_S(va_list S);
+int print_p(va_list p);
 int print_r(va_list r);
 int print_R(va_list R);
 int _printf(const char *format, ...);
+static unsigned long _pow(unsigned int base, unsigned int exponent);
 int print_hex(unsigned int n, unsigned int f);
 
 #endif /*_MAIN_H_*/
