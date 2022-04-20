@@ -25,7 +25,7 @@ int (*conversion_specifiers(const char *format))(va_list)
 
 	while (p[i].a != NULL)
 	{
-		if(*p[i].a == *format)
+		if (*p[i].a == *format)
 			break;
 		i++;
 	}
@@ -50,7 +50,7 @@ int _printf(const char *format, ...)
 	va_start(valist, format);
 	while (format[i])
 	{
-		for (; format[i] != '%' && format[i]; i++)
+		for ( ; format[i] != '%' && format[i]; i++)
 		{
 			_putchar(format[i]);
 			count++;
