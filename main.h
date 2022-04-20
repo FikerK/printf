@@ -31,7 +31,7 @@ int print_p(va_list p);
 int print_r(va_list r);
 int print_R(va_list R);
 int _printf(const char *format, ...);
-static unsigned long _pow(unsigned int base, unsigned int exponent);
+unsigned long _pow(unsigned int base, unsigned int exponent);
 int print_hex(unsigned int n, unsigned int f);
 
 #endif /*_MAIN_H_*/

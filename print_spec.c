@@ -7,7 +7,7 @@
  * Return: base ^ exponent
  */
 
-static unsigned long _pow(unsigned int base, unsigned int exponent)
+unsigned long _pow(unsigned int base, unsigned int exponent)
 {
 	unsigned int i;
 	unsigned long ans = base;
