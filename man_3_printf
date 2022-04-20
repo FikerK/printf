@@ -6,51 +6,19 @@
 .nf
 .BI printf (FORMAT, ARGUMENT)...
 .PP
-.BI "#include 'main.h'
-.BI "#include <stdarg.h>"
-.BI "#include <unistd.h>"
+.BI "#include "main.h"
 .PP
 .BI "int _printf(const char *format, ...);"
-.BI "int print_prg(va_list __attribute__((unused)), char *, unsigned int);"
-.BI "int print_chr(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_str(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_int(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_bnr(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_unt(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_oct(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_hex(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_upx(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_usr(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_add(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_rev(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int print_rot(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinlint(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinlunt(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinloct(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinlhex(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinlupx(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinhint(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinhunt(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinhoct(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinhhex(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinhupx(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinpint(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinnoct(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinnhex(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinnupx(va_list arguments, char *buf, unsigned int ibuf);"
-.BI "int prinsint(va_list arguments, char *buf, unsigned int ibuf);"
-.PP
-.BI "int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);"
-.BI "int ev_print_func(const char *s, int index);"
-.PP
-.BI "unsigned int handl_buf(char *buf, char c, unsigned int ibuf);"
-.BI "int print_buf(char *buf, unsigned int nbuf);"
-.PP
-.BI "char *fill_binary_array(char *binary, long int int_in, int isneg, int limit);"
-.BI "char *fill_oct_array(char *bnr, char *oct);"
-.BI "char *fill_long_oct_array(char *bnr, char *oct);"
-.BI "char *fill_short_oct_array(char *bnr, char *oct);"
-.BI "char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);"
+.BI "int print_c(va_list c);
+.BI "int print_s(va_list s);
+.BI "int print_i(va_list i);
+.BI "int print_b(va_list b);
+.BI "int print_u(va_list u);
+.BI "int print_o(va_list o);
+.BI "int print_x(va_list x);
+.BI "int print_X(va_list X);
+.BI "int print_S(va_list S);
+.BI "int print_hex(unsigned int n, unsigned int f);
 .PP
 .SH DESCRIPTION
 The output function _printf() produce output according to a format. the function _printf converts the character strings that receives as argument and prints it on the standard output.
