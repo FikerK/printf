@@ -99,7 +99,7 @@ int print_o(va_list o)
 int print_hex(unsigned int n, unsigned int f)
 {
 	unsigned int a[8];
-	unsigned int i, m , sum, c;
+	unsigned int i, m, sum, c;
 	char d;
 
 	/*16 ^ 7*/
