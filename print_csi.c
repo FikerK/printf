@@ -32,6 +32,12 @@ int print_s(va_list s)
 	return (i);
 }
 
+/**
+ * print_i - prints integer
+ * @i: va_list integer
+ * Return: number of digit
+ */
+
 int print_i(va_list i)
 {
 	unsigned int m = 1, c = 0;
